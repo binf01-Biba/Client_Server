@@ -37,6 +37,30 @@ public class Server {
         }
         return clientSocket;
     }
-    
+    public void close(){
+        if (clientSocket != null) {
+            try {
+                clientSocket.close();
+            } catch (IOException e) {
+                System.err.println("Errore in chiusura del socket");
+            }
+        }
+
+
+    }
+
+    public void termina(){
+
+    }
+
+    public void leggi(){
+
+    }
+
+    public void scrivi(){
+
+    }
+
+
    
 }
