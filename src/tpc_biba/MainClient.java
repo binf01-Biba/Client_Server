@@ -5,8 +5,10 @@
 package tpc_biba;
 
 
+import java.io.IOException;
+
 public class MainClient {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         Client cl = new Client("Arli");
         cl.connetti("localhost",2000);
         cl.scrivi();
